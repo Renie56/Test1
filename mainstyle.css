@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'CeraRoundProBold';
+    src: url('./fonts/FontsFree-Net-Cera-Round-Pro3.ttf');
+}
 *{
     margin: 0;
     padding: 0;
@@ -15,8 +19,7 @@ body{
 }
 .logo{
     padding: 0;
-    width: 36vw;
-    height: 7vh;
+    width: 25vw;
     margin-top: 3.3vh;
     margin-left: 3.5vw;
 }
@@ -29,19 +32,38 @@ div.main{
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: 100%;
+    width: 78.5vw;
+    margin: auto;
 }
-.centreImg{
+.centreimg{
     width: 42.5vw;
     margin: 1.5%;
 }
 .introduction{
-    padding: 1.5%;
+    padding: 3%;
+}
+.introduction .text{
+    padding: 3%;
 }
 .introduction h2{
-    font-family: 'Cera Round Pro';
-    font-size: 2rem;
+    color: #0F2A5A;
+    font-family: 'CeraRoundProBold';
+    font-size: 28px;
     font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    margin-bottom: 1.5%;
+}
+.introduction h3, .introduction p{
+    color: #28313F;
+    letter-spacing: -0.01em;
+    line-height: 22px;
+    mix-blend-mode: normal;
+
+}
+.introduction .demoimg{
+    width: 100%;
+    margin: auto;
 }
 @media screen and (max-width:600px){
     
