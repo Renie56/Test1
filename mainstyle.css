@@ -4,26 +4,23 @@
 }
 *{
     max-width: 600px;
-    margin: 0;
+    max-height: 1874px;
+    margin: auto;
     padding: 0;
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 body{
     margin: 0;
     box-sizing: border-box;
     background-image: url(./img/Ellipse.svg);
+    background-position: 0 10%;
     background-size: auto, auto;
     background-repeat: no-repeat;
 }
 .logo{
     padding: 0;
     width: 25%;
-    margin-top: 3.3%;
-    margin-left: 3.5%;
+    margin-top: 8%;
+    margin-left: 10%;
 }
 .logo img{
     width: 100%;
@@ -38,34 +35,100 @@ div.main{
     margin: auto;
 }
 .centreimg{
-    width: 42.5%;
+    width: auto;
     margin: 1.5%;
+}
+.title{
+    position: absolute;
+    margin-left: -50px;
+    margin-top: 8px;
+}
+.text{
+    line-height: 148%;
+    letter-spacing: 0.02em;
 }
 .introduction{
     padding: 3%;
 }
-.introduction .text{
-    padding: 3%;
-}
 .introduction h2{
+    position: relative;
     color: #0F2A5A;
     font-family: 'CeraRoundProBold';
     font-size: 28px;
     font-weight: 700;
     line-height: 120%;
     letter-spacing: 0.02em;
-    margin-bottom: 1.5%;
+    margin-top: 4.7%;
+    margin-bottom: 4%;
 }
 .introduction h3, .introduction p{
+    padding-bottom: 2%;
     color: #28313F;
     letter-spacing: -0.01em;
     line-height: 22px;
     mix-blend-mode: normal;
-
 }
 .introduction .demoimg{
     width: 100%;
-    margin: auto;
+    margin-bottom: 3%;
+    margin-top: 1.5%;
+}
+.services{
+}
+ul{
+    margin-top: 4%;
+    list-style: none;
+}
+ul li{
+    display: flex;
+    justify-content: space-between;
+    color: #28313F;
+    margin-bottom: 3%;
+}
+.servise_text{
+    margin-left: 5%;
+    width: auto;
+    height: auto;
+}
+.servise_text h4{
+    margin-bottom: 2%;
+}
+.icons{
+    margin-top: 0%;
+}
+.button_back{
+    margin-top: 4%;
+    background-color: #E2E6EB;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+}
+.button_back p{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 42%;
+    height: auto;
+    background-color: #63AE18;
+    border-radius: 100px;
+}
+.button p{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
 }
 @media screen and (max-width:600px){
     
