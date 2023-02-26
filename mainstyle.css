@@ -139,6 +139,74 @@ ul li{
 a{
     text-decoration: none;
 }
+.farewell{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.farewell p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    mix-blend-mode: normal;
+    color: #0E2D54;
+}
+.img_text{
+    display: flex;
+    align-items: center;
+}
+.img_text p{
+    padding-left: 4%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    color: #0F2A5A;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.bottom{
+    background-color: #153769;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+}
+.networks{
+    margin: 7%;
+}
+.networks .icons{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contacts a, .rules_safety a{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+}
+.telefon, .Privacy_Policy{
+    padding-top: 7%;
+}
+.rules_safety{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 @media screen and (max-width:600px){
     
 }
