@@ -4,7 +4,6 @@
 }
 *{
     max-width: 600px;
-    max-height: 1874px;
     margin: auto;
     padding: 0;
 }
@@ -15,18 +14,18 @@ body{
     margin: 0;
     box-sizing: border-box;
     background-image: url(./img/Ellipse.svg);
-    background-position: 0 10%;
+    background-position: 0 24%;
     background-size: auto, auto;
     background-repeat: no-repeat;
     font-family: 'CeraRoundProBold';
 }
-.logo{
+header{
     padding: 0;
     width: 25%;
     margin-top: 8%;
     margin-left: 10%;
 }
-.logo img{
+header img{
     width: 100%;
     height: 100%;
 }
@@ -42,6 +41,9 @@ div.main{
     width: auto;
     margin: 1.5%;
 }
+.centreimg img{
+    width: 100%;
+}
 .title{
     position: absolute;
     margin-left: -50px;
@@ -52,7 +54,7 @@ div.main{
     letter-spacing: 0.02em;
 }
 .introduction{
-    padding: 3%;
+    width: 100%;
 }
 .introduction h2{
     position: relative;
@@ -71,10 +73,30 @@ div.main{
     line-height: 22px;
     mix-blend-mode: normal;
 }
-.introduction .demoimg{
-    width: 100%;
+h3{
+    font-size: 18px;
+}
+.demoimg{
+    width: auto;
     margin-bottom: 3%;
     margin-top: 1.5%;
+}
+.demoimg img{
+    width: 100%;
+}
+.watchword h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 148%;
+    letter-spacing: 0.02em;
+    color: #28313F;
+}
+.watchword p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: -0.01em;
+    color: #28313F;
 }
 ul{
     margin-top: 4%;
@@ -86,13 +108,19 @@ ul li{
     color: #28313F;
     margin-bottom: 3%;
 }
-.servise_text{
+.servise_text p{
     margin-left: 5%;
     width: auto;
     height: auto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #28313F;
 }
-.servise_text h4{
-    margin-bottom: 2%;
+.servise_text .name{
+    font-weight: 500;
+    font-size: 16px;
 }
 .icons{
     margin-top: 0%;
@@ -170,12 +198,13 @@ a{
     order: 1;
     flex-grow: 0;
 }
-.bottom{
+footer{
     background-color: #153769;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     color: white;
 }
 .networks{
@@ -207,6 +236,29 @@ a{
     flex-direction: column;
     justify-content: center;
 }
-@media screen and (max-width:600px){
-    
+@media screen and (max-width:300px){
+    body{
+        background-size: 87.5%, auto;
+        background-position: 0 5%;
+    }
+    header{
+        width: auto;
+        margin-left: 27%;
+        margin-right: 27%;
+    }
+    .main, footer{
+        max-width: 90%;
+    }
+    .text{
+        text-align: center;
+    }
+    .text h2, .text p, .text h3{
+        vertical-align:middle;
+    }
+    .introduction h2{
+        font-size: 22px;
+    }
+    .centreimg{
+        margin-left: 7.5%;
+    }
 }
