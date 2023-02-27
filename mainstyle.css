@@ -29,7 +29,7 @@ header img{
     width: 100%;
     height: 100%;
 }
-div.main{
+.main{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,10 +46,10 @@ div.main{
 }
 .title{
     position: absolute;
-    margin-left: -50px;
+    margin-left: -10%;
     margin-top: 8px;
 }
-.text{
+.maintext, .text{
     line-height: 148%;
     letter-spacing: 0.02em;
 }
@@ -83,6 +83,7 @@ h3{
 }
 .demoimg img{
     width: 100%;
+    height: auto;
 }
 .watchword h3{
     font-weight: 500;
@@ -246,19 +247,75 @@ footer{
         margin-left: 27%;
         margin-right: 27%;
     }
-    .main, footer{
-        max-width: 90%;
+    .main{
+        width: 90%;
+        margin: auto;
     }
-    .text{
-        text-align: center;
+    footer{
+        width: 100%;
     }
-    .text h2, .text p, .text h3{
-        vertical-align:middle;
+    .text h2{
+        width: 60%;
+    }
+    .text p, .text h3, .watchword, .services{
+        width: 90%;
+        text-align: start;
+    }
+    .introduction{
+        margin-top: 15%;
     }
     .introduction h2{
         font-size: 22px;
     }
     .centreimg{
         margin-left: 7.5%;
+    }
+    .title{
+        position: absolute;
+        margin-left: 5px;
+        margin-top: -20px;
+    }
+    ul li{
+        display: flex;
+        flex-direction: column;
+        color: #28313F;
+        margin-bottom: 3%;
+    }
+    .icons{
+        margin-left: 0;
+        justify-content: left;
+    }
+    .servise_text p{
+        margin-left: 0;
+        justify-content: left;
+    }
+    .farewell p{
+        line-height: 20px;
+    }
+    .button_back p{
+        width: 74%;
+        text-align: center;
+    }
+    .button{
+        width: 67%;
+    }
+    .button p{
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        margin: 5% 2% 4% 2%;
+        width: 100%;
+    }
+    .farewell{
+        width: 90%;
+    }
+    .farewell p{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: -0.01em;
+        mix-blend-mode: normal;
+        color: #0E2D54;
     }
 }
